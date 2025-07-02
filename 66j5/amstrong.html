@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function amstrong(n){
+            let m=n;
+            let sum = 0
+            while(n>0){
+                
+                let d=n%10
+                sum+=(d*d*d)
+                n=Math.floor(n/10)
+
+
+            }
+            if(sum==m){
+                return true
+
+
+            }
+            else {
+                return false
+            }
+        }
+        document.write(amstrong(153))
+    </script>
+</body>
+</html>
